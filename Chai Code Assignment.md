@@ -223,9 +223,9 @@ For eg:
 
 ### Usage
 Use `git branch <branch-name>` to create a branch & `git checkout <branch-name>` to checkout to that branch or `git checkout -b <branch-name>` to create and checkout to a branch.
-![[Pasted image 20250111013855.png]]
-![[Pasted image 20250111013622.png]]
-![[Pasted image 20250111013934.png]]
+![[git-branch.png]]
+![[git-branch-log.png]]
+![[git-checkout.png]]
 ## Pull Request Guidelines
 
 Pull Requests (PRs) are the primary means of contributing code to the project. Title of PR must follow following convention:

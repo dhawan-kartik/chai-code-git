@@ -11,14 +11,12 @@
             "id": "f51388a281abda87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Chai Code Assignment.md",
-                "mode": "source",
-                "source": false
+                "file": "git-checkout.png"
               },
-              "icon": "lucide-file",
-              "title": "Chai Code Assignment"
+              "icon": "lucide-image",
+              "title": "git-checkout"
             }
           }
         ]
@@ -162,11 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f51388a281abda87",
+  "active": "0f1c1b2c0f86e0dc",
   "lastOpenFiles": [
-    "Pasted image 20250111013934.png",
-    "Pasted image 20250111013855.png",
-    "Pasted image 20250111013622.png",
+    "git-branch.png",
+    "git-branch-log.png",
+    "Chai Code Assignment.md",
+    "git-checkout.png",
     "git-remote-add.png",
     "git-push.png",
     "Pasted image 20250111012905.png",
@@ -174,8 +173,6 @@
     "git-commit.png",
     "Pasted image 20250111012817.png",
     "Pasted image 20250111012801.png",
-    "git-pull.png",
-    "Chai Code Assignment.md",
     "git.md",
     "README.md"
   ]
