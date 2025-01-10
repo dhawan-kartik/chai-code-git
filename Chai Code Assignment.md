@@ -123,15 +123,15 @@ Some of the common Git commands are as followed:
 - `git add .` - add all files to staging area
   ![[git-add-all.png]]
 - `git commit -m <message>` - commit all staged files with provided message
-![[Pasted image 20250111012723.png]] 
+![[git-commit.png]] 
 - `git remote add <name> <url>` - create a connection with a remote repository with provided name and URL
-![[Pasted image 20250111012930.png]]
+![[git-remote-add.png]]
 - `git push` - push changes to remote
-![[Pasted image 20250111012843.png]]  
+![[git-push.png]]  
 - `git pull` - pull changes from remote
-  ![[Pasted image 20250111012623.png]]
+  ![[git-pull.png]]
 - `git log` - show commit history
-  ![[Pasted image 20250111012543.png]]
+  ![[git-log.png]]
 - `git reset --hard HEAD~1` - reset to previous commit
 - `git reset --soft HEAD~1` - soft reset to previous commit keeping changes
 
@@ -221,6 +221,11 @@ For eg:
 - rahuls/payment/#xyz789/add-configuration-for-payment-gateway
 ```
 
+### Usage
+Use `git branch <branch-name>` to create a branch & `git checkout <branch-name>` to checkout to that branch or `git checkout -b <branch-name>` to create and checkout to a branch.
+![[Pasted image 20250111013855.png]]
+![[Pasted image 20250111013622.png]]
+![[Pasted image 20250111013934.png]]
 ## Pull Request Guidelines
 
 Pull Requests (PRs) are the primary means of contributing code to the project. Title of PR must follow following convention:
