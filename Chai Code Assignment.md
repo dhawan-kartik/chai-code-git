@@ -123,18 +123,17 @@ Some of the common Git commands are as followed:
 - `git add .` - add all files to staging area
   ![[git-add-all.png]]
 - `git commit -m <message>` - commit all staged files with provided message
-![[git-commit.png]] 
+![[Pasted image 20250111012723.png]] 
 - `git remote add <name> <url>` - create a connection with a remote repository with provided name and URL
-![[git-remote-add-origin.png]]
+![[Pasted image 20250111012930.png]]
 - `git push` - push changes to remote
-  ![[git-push.png]]
+![[Pasted image 20250111012843.png]]  
 - `git pull` - pull changes from remote
-  ![[git-pull.png]]
+  ![[Pasted image 20250111012623.png]]
 - `git log` - show commit history
-  ![[git-log.png]]
+  ![[Pasted image 20250111012543.png]]
 - `git reset --hard HEAD~1` - reset to previous commit
 - `git reset --soft HEAD~1` - soft reset to previous commit keeping changes
-
 
 ```bash
 # Check repository status
