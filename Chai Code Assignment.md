@@ -123,9 +123,180 @@ Some of the common Git commands are as followed:
 - `git add .` - add all files to staging area
   ![[git-add-all.png]]
 - `git commit -m <message>` - commit all staged files with provided message
+![[git-commit.png]] 
 - `git remote add <name> <url>` - create a connection with a remote repository with provided name and URL
+![[git-remote-add-origin.png]]
 - `git push` - push changes to remote
+  ![[git-push.png]]
 - `git pull` - pull changes from remote
+  ![[git-pull.png]]
+- `git log` - show commit history
+  ![[git-log.png]]
 - `git reset --hard HEAD~1` - reset to previous commit
 - `git reset --soft HEAD~1` - soft reset to previous commit keeping changes
-- `git log` - show commit history
+
+
+```bash
+# Check repository status
+git status
+
+# Add files to staging
+git add <filename>     # Add specific file
+git add .             # Add all files
+
+# Commit changes
+git commit -m "feat(auth): Add login service"
+
+# Push changes to remote
+git push origin <branch-name>
+
+# Pull latest changes
+git pull origin <branch-name>
+
+# View commit history
+git log
+
+# Reset changes
+git reset --hard HEAD~1  # Reset to previous commit
+git reset --soft HEAD~1  # Soft reset keeping changes
+```
+
+## Commit Conventions
+
+Clear and consistent commit messages are crucial for maintaining a clean project history. In our organization, we follow following syntax for our commit messages.
+
+```
+<prefix>(<scope>): <Message>
+```
+
+Here`<prefix>` are of following types: 
+```
+ - `feat` - New feature
+ - `fix` - Bug fix
+ - `chore` - Maintenance task
+ - `refact `- Code refactoring
+ - `docs`- Documentation related changes
+ - `test` - Add/Modify tests 
+```
+
+`<scope>` provides context about what part of the code base is 
+affected by this commit. 
+```
+For eg: 
+ - `auth`: authentication related change
+ - `api`: change in API
+ - `ui:` change related to UI 
+ - `migration`: add/updated db migration
+ - `db`: database related change
+ - `config`: change in configuration 
+```
+
+`<Message>` A commit message must be command or instruction to the code base to perform some activity and the first character of first word must be in uppercase and remaining characters must be in lower case.
+```
+For eg: 
+ - feat(auth): Add login service
+ - fix(api): Fix 404 in verification mail api
+ - chore(payment): remove logs from payment service
+
+NOTE: commits should be small and atomic and must aim to perform a specific task.
+```
+
+## Branching Strategy
+
+A consistent branching strategy helps maintain order in the development process. Branches must follow following naming convention:
+
+```
+<firstName><initial of lastName>/<scope>/<ticket-id>/<change-summary>
+```
+
+Here
+- `firstName`: Your first name
+- `initial of lastName`: First letter of your last name
+- `scope`: Area of change (auth, api, ui, etc.)
+- `ticket-id`: Related issue or ticket number
+- `change-summary`: Brief description in kebab-case
+
+```
+For eg: 
+- kartikd/auth/#abc123/implement-login-signup-feature
+- rahuls/payment/#xyz789/add-configuration-for-payment-gateway
+```
+
+## Pull Request Guidelines
+
+Pull Requests (PRs) are the primary means of contributing code to the project. Title of PR must follow following convention:
+
+```
+<Prefix>(<scope>): <Summary of changes>
+```
+
+Here, 
+- `<prefix>` is same as in commit message but is capitalized
+- `<scope>` is enclosed in brackets and define affected module or areas
+
+A PR must have
+1. Appropriate prefix (Feat, Fix, etc.)
+2. Module/scope in brackets
+3. Relevant labels
+4. Issue ID reference
+5. Description of changes
+
+For example:
+```
+Feat(auth): Implement OAuth2 authentication
+
+## Changes
+- Implemented OAuth2 flow with Google and GitHub
+- Added user authentication middleware
+- Updated API documentation for auth endpoints
+- Added unit tests for auth services
+
+## Issue
+Fixes #123
+Related to #456
+
+## Type of change
+- [x] New feature
+- [ ] Bug fix
+- [ ] Documentation update
+- [ ] Breaking change
+
+## Testing
+- [x] Unit tests added
+- [x] Integration tests updated
+- [x] Manual testing completed
+
+## Screenshots
+[If applicable]
+
+## Checklist
+- [x] Code follows style guidelines
+- [x] Changes tested locally
+- [x] Documentation updated
+- [x] No new warnings generated
+```
+## Best Practices
+
+Some of the best practices that you must follow when working with Git & GitHub are: 
+#### Regular Commits
+- Commit frequently with logical units of change
+- Avoid large, monolithic commits
+- Keep commits atomic and focused
+#### Descriptive Messages
+- Write clear, concise commit messages
+- Include context when necessary
+- Follow commit convention strictly
+#### Staying Updated
+- Pull changes regularly from main branch
+- Resolve conflicts promptly
+- Keep local branches up to date
+- Use `git fetch` to check for updates without merging
+#### Code Review
+- Review PRs thoroughly
+- Provide constructive feedback
+- Address review comments promptly
+- Test changes locally before approving
+
+Good Git practices lead to better collaboration, cleaner code, and a more maintainable project. Take time to follow these guidelines, and they will become natural parts of your development workflow.
+
+Thanks.
