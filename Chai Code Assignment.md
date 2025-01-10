@@ -117,21 +117,35 @@ cd chai-code-git
 Some of the common Git commands are as followed:
 
 - `git status` - shows status of repository i.e. staged and unstaged files
+
   ![[git-status.png]]
 - `git add <filename>` - add file to staging area
+
   ![[git-add-file.png]]
+
 - `git add .` - add all files to staging area
+
   ![[git-add-all.png]]
 - `git commit -m <message>` - commit all staged files with provided message
+
 ![[git-commit.png]] 
+
 - `git remote add <name> <url>` - create a connection with a remote repository with provided name and URL
+
 ![[git-remote-add.png]]
+
 - `git push` - push changes to remote
+
 ![[git-push.png]]  
+
 - `git pull` - pull changes from remote
+
   ![[git-pull.png]]
+
 - `git log` - show commit history
+
   ![[git-log.png]]
+
 - `git reset --hard HEAD~1` - reset to previous commit
 - `git reset --soft HEAD~1` - soft reset to previous commit keeping changes
 
@@ -223,8 +237,11 @@ For eg:
 
 ### Usage
 Use `git branch <branch-name>` to create a branch & `git checkout <branch-name>` to checkout to that branch or `git checkout -b <branch-name>` to create and checkout to a branch.
+
 ![[git-branch.png]]
+
 ![[git-branch-log.png]]
+
 ![[git-checkout.png]]
 ## Pull Request Guidelines
 
@@ -279,6 +296,34 @@ Related to #456
 - [x] Documentation updated
 - [x] No new warnings generated
 ```
+
+### Usage
+
+To create a PR first create some commits in a separate branch and push that branch to remote
+
+![[branch-commits.png]]
+
+![[push-branch.png]]
+
+Now, after pushing the branch go to pull requests tab in your GitHub repository 
+
+![[create-pr.png]]
+
+Click on "Compare & pull request", Add title and labels, Select base branch and click on "Create Pull Request"
+
+![[pull-request.png]]
+
+Now that we have created the PR, next step is to get it reviewed and once the PR is approved we can proceed to merge it. 
+
+In order to merge it we can either use `rebase & merge` or `cherry-pick` required commits if our branch is no longer synced with it's base branch. 
+
+In our case since both the branches are in sync we can merge it directly using
+
+```bash
+git merge 
+``` 
+
+
 ## Best Practices
 
 Some of the best practices that you must follow when working with Git & GitHub are: 
