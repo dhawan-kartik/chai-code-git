@@ -323,7 +323,7 @@ In our case since both the branches are in sync we can merge it directly using
 git merge 
 ``` 
 
-
+![[checkout-and-merge.png]]
 ## Best Practices
 
 Some of the best practices that you must follow when working with Git & GitHub are: 

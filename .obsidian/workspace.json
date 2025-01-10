@@ -162,19 +162,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f51388a281abda87",
+  "active": "0f1c1b2c0f86e0dc",
   "lastOpenFiles": [
-    "create-pr.png",
-    "Chai Code Assignment.md",
-    "pull-request.png",
+    "checkout-and-merge.png",
     "push-branch.png",
-    "branch-commits.png",
+    "pull-request.png",
+    "git-remote-add.png",
+    "git-push.png",
+    "git-pull.png",
+    "git-log.png",
+    "git-commit.png",
     "git-checkout.png",
     "git-branch.png",
     "git-branch-log.png",
-    "git-remote-add.png",
-    "git-push.png",
-    "Pasted image 20250111012905.png",
+    "Chai Code Assignment.md",
     "git.md",
     "README.md"
   ]
